@@ -23,20 +23,3 @@
     "node": ">=18.0.0"
   }
 }
-```
-
-### Como aplicar a correção e fazer o deploy
-
-No seu terminal (pasta raiz), execute:
-
-1.  **Adicionar a alteração:**
-    ```bash
-    git add package.json
-    ```
-2.  **Salvar:**
-    ```bash
-    git commit -m "Fix: Instalar dependências do backend no build"
-    ```
-3.  **Enviar para o Render:**
-    ```bash
-    git push origin main
