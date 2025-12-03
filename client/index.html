@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    
+    <!-- TRUQUE DE DEBUG: Mostra erros na tela do celular -->
+    <script>
+      window.onerror = function(message, source, lineno, colno, error) {
+        alert("ERRO CRÍTICO:\n" + message + "\nLinha: " + lineno);
+      };
+      window.onunhandledrejection = function(event) {
+        alert("ERRO DE PROMESSA:\n" + event.reason);
+      };
+    </script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
