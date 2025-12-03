@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "npm install --prefix client && npm run build --prefix client"
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
@@ -23,3 +23,20 @@
     "node": ">=18.0.0"
   }
 }
+```
+
+### Como aplicar a correção e fazer o deploy
+
+No seu terminal (pasta raiz), execute:
+
+1.  **Adicionar a alteração:**
+    ```bash
+    git add package.json
+    ```
+2.  **Salvar:**
+    ```bash
+    git commit -m "Fix: Instalar dependências do backend no build"
+    ```
+3.  **Enviar para o Render:**
+    ```bash
+    git push origin main
